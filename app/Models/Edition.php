@@ -13,10 +13,10 @@ class Edition extends Model
     public function course(){
         return $this->belongsTo(Course::class);
     }
-    public function professor(){
+    public function employee(){
         return $this->belongsTo(Employee::class);
     }
-    public function employees(){
+    public function employee_editions(){
         return $this->belongsToMany(Employee::class,'employee__editions');
     }
 }

@@ -17,14 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('description');
             $table->unsignedInteger('cost');
-            $table->unsignedInteger('number_hours');
-            $table->date('date_birth');
-            $table->string('nationality');
-            $table->double('salary');
-            $table->enum('sex', ['Masculino', 'Femenino']);
-            $table->boolean('is_qualified')->default(false);
-            
-            
+            $table->unsignedInteger('number_hours');            
         });
     }
 

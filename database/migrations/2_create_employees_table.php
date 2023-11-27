@@ -17,8 +17,13 @@ return new class extends Migration
             $table->string('name',55);
             $table->string('last_names',55);
             $table->string('address');
-            $table->string('phone');    
+            $table->string('phone',8);    
             $table->char('nif',10);
+            $table->date('date_birth');
+            $table->string('nationality');
+            $table->double('salary');
+            $table->enum('sex', ['Masculino', 'Femenino']);
+            $table->boolean('is_qualified')->default(false);
             
 
 
